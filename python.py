@@ -1,5 +1,10 @@
-num=int(input("Enter the number"))
-if(num==5):
-    print("it is an armstrong number")
+num = 5
+factorial = 1
+if num < 0:
+    print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+    print("The factorial of 0 is 1")
 else:
-    print("it is not an armstrong number")
+    for i in range(1, num + 1):
+        factorial *= i
+    print("The factorial of", num, "is", factorial)
